@@ -1,0 +1,67 @@
+#
+# Copyright 2017 Valassis Digital, Inc. All Rights Reserved. NOTICE: All information contained herein is, and remains
+# the property of Valassis Digital, Inc. The intellectual and technical concepts contained herein are proprietary to
+# Valassis Digital, Inc. and may be covered by U.S. and Foreign Patents, pending patents, and maybe protected by
+# trade secret law. Dissemination of this information or reproduction of this material is strictly forbidden unless
+# prior written permission is obtained from Valassis Digital, Inc.
+#
+
+replicaCount: 1
+
+image:
+  pullPolicy: Always
+  repository: 943239102098.dkr.ecr.eu-west-1.amazonaws.com/hello-world
+  tag: latest
+
+imagePullSecrets: []
+nameOverride: ""
+
+fullnameOverride: ""
+
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: NodePort
+  port: 3000
+
+resources:
+  limits:
+    cpu: 512m
+    memory: 512Mi
+  requests:
+    cpu: 512m
+    memory: 512Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
