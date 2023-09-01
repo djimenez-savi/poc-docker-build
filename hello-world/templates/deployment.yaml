@@ -33,10 +33,6 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-          volumeMounts:
-          - name: psplusext
-            mountPath: /usr/local/tomcat/config/
-            readOnly: true
           ports:
             - name: http
               containerPort: 8080
@@ -63,7 +59,3 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      volumes:
-        - name: psplusext
-          secret:
-            secretName: psplusext
