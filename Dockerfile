@@ -6,4 +6,4 @@ WORKDIR /usr/share/nginx/html/
 
 COPY ./index.html index.html
 
-RUN sed -i "s/version/${VERSION}/" index.html
+RUN sed -i 's/version/${VERSION}/' index.html
