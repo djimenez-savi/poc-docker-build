@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/djimenez-savi/poc-docker-build/compare/v1.2.0...v1.2.1) (2023-09-04)
+
+
+### Bug Fixes
+
+* some problems with helm chart ([14f07f9](https://github.com/djimenez-savi/poc-docker-build/commit/14f07f9e8cd529e93a2f4473e248b7b538d0e6c4))
+
 # [1.2.0](https://github.com/djimenez-savi/poc-docker-build/compare/v1.1.0...v1.2.0) (2023-09-01)
 
 
