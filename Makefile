@@ -2,6 +2,7 @@ SELF_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
 
 name ?= $(shell basename ${SELF_DIR})
 version := $(shell helm local-chart-version get -c ${SELF_DIR})
+VERSION := $(shell cat $(SELF_DIR_SCRIPTS)version.txt)
 TAG ?= test
 
 chart-add-repo:
@@ -29,3 +30,11 @@ docker-pull:
 
 docker-run:
 	docker run --rm -p 127.0.0.1:8082:80 943239102098.dkr.ecr.eu-west-1.amazonaws.com/hello-world:$(TAG)
+
+
+podman-build:
+	podman build -t 943239102098.dkr.ecr.eu-west-1.amazonaws.com/hello-world:$(TAG) --build-arg VERSION=$(VERSION) .
+
+podman-run:
+	podman run --rm -p 127.0.0.1:8082:80 943239102098.dkr.ecr.eu-west-1.amazonaws.com/hello-world:$(TAG)
+

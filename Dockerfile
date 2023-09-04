@@ -1,8 +1,9 @@
 FROM docker.io/nginx
 
+ARG VERSION=1.0.0
+
 WORKDIR /usr/share/nginx/html/
 
 COPY ./index.html index.html
-COPY ./version.txt version.txt
 
-RUN sed -i "s/version/$(cat ./version.txt)/" index.html
+RUN sed -i "s/version/${VERSION}/" index.html
