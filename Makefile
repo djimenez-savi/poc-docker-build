@@ -19,3 +19,6 @@ chart-build-publish: bump-patch
 
 chart-clean-tgz:
 	rm ./*.tgz
+
+docker-run:
+	docker run --rm -p 127.0.0.1:8082:80 --pull=always 943239102098.dkr.ecr.eu-west-1.amazonaws.com/hello-world:latest
