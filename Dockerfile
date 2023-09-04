@@ -1,6 +1,6 @@
 FROM docker.io/nginx
 
-ARG VERSION=1.0.0
+ARG VERSION
 
 WORKDIR /usr/share/nginx/html/
 
