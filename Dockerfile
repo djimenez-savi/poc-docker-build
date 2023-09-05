@@ -1,4 +1,4 @@
-FROM docker.io/nginx
+FROM public.ecr.aws/docker/library/nginx:latest
 
 ARG VERSION
 
