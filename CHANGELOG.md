@@ -1,3 +1,10 @@
+## [1.2.34](https://github.com/djimenez-savi/poc-docker-build/compare/v1.2.33...v1.2.34) (2023-09-08)
+
+
+### Bug Fixes
+
+* added ingressClass field ([ba1f412](https://github.com/djimenez-savi/poc-docker-build/commit/ba1f412f53fb7b825a3a667db925b46c81ce307d))
+
 ## [1.2.33](https://github.com/djimenez-savi/poc-docker-build/compare/v1.2.32...v1.2.33) (2023-09-07)
 
 
