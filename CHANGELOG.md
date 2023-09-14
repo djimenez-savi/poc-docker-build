@@ -1,3 +1,10 @@
+## [1.2.39](https://github.com/djimenez-savi/poc-docker-build/compare/v1.2.38...v1.2.39) (2023-09-14)
+
+
+### Bug Fixes
+
+* new version ([c955752](https://github.com/djimenez-savi/poc-docker-build/commit/c955752c9b61b0f1f5b483721827c11fc8772529))
+
 ## [1.2.38](https://github.com/djimenez-savi/poc-docker-build/compare/v1.2.37...v1.2.38) (2023-09-14)
 
 
