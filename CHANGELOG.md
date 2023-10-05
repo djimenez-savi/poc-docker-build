@@ -1,3 +1,10 @@
+## [1.2.44](https://github.com/djimenez-savi/poc-docker-build/compare/v1.2.43...v1.2.44) (2023-10-05)
+
+
+### Bug Fixes
+
+* **asdas:** new version ([cc6f69e](https://github.com/djimenez-savi/poc-docker-build/commit/cc6f69eab318f99418fcd7e8a76cbdfea0494b9c))
+
 ## [1.2.43](https://github.com/djimenez-savi/poc-docker-build/compare/v1.2.42...v1.2.43) (2023-10-05)
 
 
